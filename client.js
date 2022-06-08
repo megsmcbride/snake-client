@@ -6,15 +6,14 @@ const connect = (() => {
     host: '10.0.0.57',
     port: 50541,
   });
-
+  const username = "MAM";
   conn.setEncoding("utf8");
   conn.on("connect", () => {
-    console.log("You are connected");
+    console.log(`Welcome ${username}, you are now connected`);
   });
-  conn.on("data", (data) => {
-    console.log(`${data}`);
-  });
-
+  conn.on('data', (data) => {
+    console.log(`${data}`)
+  })
   return conn;
 
 });
