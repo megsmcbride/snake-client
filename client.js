@@ -12,8 +12,10 @@ const connect = (() => {
     console.log(`Welcome ${username}, you are now connected`);
   });
   conn.on('data', (data) => {
-    console.log(`${data}`)
-  })
+    console.log(`${data}`);
+
+  });
+
   return conn;
 
 });
@@ -21,4 +23,4 @@ const connect = (() => {
 console.log("Connecting...");
 connect();
 
-module.exports = {connect};
+module.exports = { connect };
