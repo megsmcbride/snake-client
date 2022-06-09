@@ -30,11 +30,11 @@ const handleUserInput = (key) => {
   if (key === "h") {
     connection.write("Say: Hello");
   } else if (key === "g") {
-    connection.write("Say: Good game!);
+    connection.write("Say: Good game!");
   } else if (key === "b") {
     connection.write("Say: Goodbye");
-  } else if (key === "w") {
-    connection.write("Say: WOW!");
+  } else if (key === "p") {
+    connection.write("Say: POW!");
   };
 };
 
